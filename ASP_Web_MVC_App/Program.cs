@@ -26,6 +26,7 @@ namespace ASP_Web_MVC_App
             builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
                 .AddMicrosoftIdentityWebApp(options =>
                 {
+                    builder.Configuration.Bind("AzureAd", options);
                     options.ClientId = builder.Configuration["ClientIdWebApp"];
                     options.TenantId = builder.Configuration["TenantIdWebApp"];
                     options.Domain = "sdkpractice-cfffd2ewbagqagcy.canadacentral-01.azurewebsites.net";
