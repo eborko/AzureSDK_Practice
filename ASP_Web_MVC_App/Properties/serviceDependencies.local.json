@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "connectionInfo": "App registration: AzudeSDK_Practice, Tenant: Default Directory (rezlaja.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    },
+    "secrets1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/practicesecrets",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri",
+      "dynamicId": null
+    }
+  }
+}
