@@ -19,7 +19,7 @@ namespace ASP_Web_MVC_App
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            var keyVaultEndpoint = new Uri($"https://{builder.Configuration["KeyVaultName"]}.vault.azure.net/");
+            var keyVaultEndpoint = new Uri("https://practicesecrets.vault.azure.net/");
             builder.Configuration.AddAzureKeyVault(keyVaultEndpoint, new DefaultAzureCredential());
 
             // Add services to the container.
